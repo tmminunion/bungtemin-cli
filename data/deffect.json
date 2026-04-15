@@ -1,0 +1,60 @@
+[
+  {
+    "date": "2026-04-15",
+    "production_data": {
+      "daily_production": 341,
+      "unit": "pcs"
+    },
+    "defect_summary": {
+      "counts": {
+        "spot_ta": 0,
+        "spot_lepas": 2,
+        "spot_miss": 4,
+        "cripple": 3,
+        "makure": 3
+      },
+      "dpu_per_defect": {
+        "spot_ta": 0,
+        "spot_lepas": 0.0059,
+        "spot_miss": 0.0117,
+        "cripple": 0.0088,
+        "makure": 0.0088
+      }
+    },
+    "summary": {
+      "total_defects": 12,
+      "total_defect_per_unit": 0.0352,
+      "target_dpu": 0.02,
+      "status": "Di atas target (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "production_data": {
+      "daily_production": 347,
+      "unit": "pcs"
+    },
+    "defect_summary": {
+      "counts": {
+        "spot_ta": 3,
+        "spot_lepas": 5,
+        "spot_miss": 2,
+        "cripple": 2,
+        "makure": 0
+      },
+      "dpu_per_defect": {
+        "spot_ta": 0.0086,
+        "spot_lepas": 0.0144,
+        "spot_miss": 0.0058,
+        "cripple": 0.0058,
+        "makure": 0
+      }
+    },
+    "summary": {
+      "total_defects": 12,
+      "total_defect_per_unit": 0.0346,
+      "target_dpu": 0.02,
+      "status": "Di atas target (Tidak Tercapai)"
+    }
+  }
+]

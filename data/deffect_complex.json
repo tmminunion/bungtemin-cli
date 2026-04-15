@@ -1,0 +1,2208 @@
+[
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "production_data": {
+      "total_daily_production": 519,
+      "unit": "pcs",
+      "jig_count": 15
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 34,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 9,
+        "dpu": 0.2647
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 34,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 3,
+          "makure": 3
+        },
+        "total_defects": 8,
+        "dpu": 0.2353
+      },
+      {
+        "jig_name": "uud",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 3
+        },
+        "total_defects": 6,
+        "dpu": 0.1765
+      },
+      {
+        "jig_name": "ufa",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 3
+        },
+        "total_defects": 6,
+        "dpu": 0.1765
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 3,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.1765
+      },
+      {
+        "jig_name": "zenix",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 3,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1176
+      },
+      {
+        "jig_name": "uea",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 3
+        },
+        "total_defects": 7,
+        "dpu": 0.2059
+      },
+      {
+        "jig_name": "uub",
+        "production": 34,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 3
+        },
+        "total_defects": 6,
+        "dpu": 0.1765
+      },
+      {
+        "jig_name": "uuc",
+        "production": 34,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 3,
+          "spot_miss": 3,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 9,
+        "dpu": 0.2647
+      },
+      {
+        "jig_name": "uue",
+        "production": 34,
+        "defects": {
+          "spot_ta": 3,
+          "spot_lepas": 3,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 9,
+        "dpu": 0.2647
+      },
+      {
+        "jig_name": "ufb",
+        "production": 34,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 3,
+          "cripple": 3,
+          "makure": 1
+        },
+        "total_defects": 9,
+        "dpu": 0.2647
+      },
+      {
+        "jig_name": "ufc",
+        "production": 34,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 3,
+          "cripple": 3,
+          "makure": 2
+        },
+        "total_defects": 10,
+        "dpu": 0.2941
+      },
+      {
+        "jig_name": "uxa",
+        "production": 34,
+        "defects": {
+          "spot_ta": 3,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 8,
+        "dpu": 0.2353
+      },
+      {
+        "jig_name": "uxb",
+        "production": 34,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 3,
+          "spot_miss": 1,
+          "cripple": 0,
+          "makure": 3
+        },
+        "total_defects": 9,
+        "dpu": 0.2647
+      },
+      {
+        "jig_name": "uxc",
+        "production": 34,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.1471
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "ufc",
+        "defect_count": 10,
+        "dpu": 0.2941
+      },
+      "total_defects": 111,
+      "average_dpu": 0.2139,
+      "target_dpu": 0.02,
+      "status": "Di atas target (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uua",
+        "defect_count": 8,
+        "dpu": 0.2
+      },
+      "total_defects": 70,
+      "average_dpu": 0.1167,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": true,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uua",
+        "defect_count": 0,
+        "dpu": 0
+      },
+      "total_defects": 0,
+      "average_dpu": 0,
+      "target_dpu": 0.02,
+      "quality_status": "OK (Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 9,
+        "dpu": 0.225
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uxc",
+        "defect_count": 9,
+        "dpu": 0.225
+      },
+      "total_defects": 83,
+      "average_dpu": 0.1383,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uua",
+        "defect_count": 8,
+        "dpu": 0.2
+      },
+      "total_defects": 83,
+      "average_dpu": 0.1383,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 1,
+        "dpu": 0.025
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uub",
+        "defect_count": 7,
+        "dpu": 0.175
+      },
+      "total_defects": 72,
+      "average_dpu": 0.12,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uxb",
+        "defect_count": 8,
+        "dpu": 0.2
+      },
+      "total_defects": 61,
+      "average_dpu": 0.1017,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 8,
+        "dpu": 0.2
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 0
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 1,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uuu-2",
+        "defect_count": 8,
+        "dpu": 0.2
+      },
+      "total_defects": 79,
+      "average_dpu": 0.1317,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": true,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 0,
+        "dpu": 0
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uua",
+        "defect_count": 0,
+        "dpu": 0
+      },
+      "total_defects": 0,
+      "average_dpu": 0,
+      "target_dpu": 0.02,
+      "quality_status": "OK (Tercapai)"
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "line": "ub assy",
+    "is_zero_defect": false,
+    "production_data": {
+      "total_daily_production": 600,
+      "production_target_min": 500,
+      "production_status": "DI ATAS TARGET",
+      "unit": "pcs",
+      "jig_count": 15,
+      "per_jig_volume": 40
+    },
+    "jigs_detail": [
+      {
+        "jig_name": "uua",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uuu-1",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      },
+      {
+        "jig_name": "uud",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 1
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "ufa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 0
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uuu-2",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 4,
+        "dpu": 0.1
+      },
+      {
+        "jig_name": "zenix",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 0,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 5,
+        "dpu": 0.125
+      },
+      {
+        "jig_name": "uea",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 1,
+        "dpu": 0.025
+      },
+      {
+        "jig_name": "uub",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "uuc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uue",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 2,
+          "spot_miss": 2,
+          "cripple": 1,
+          "makure": 1
+        },
+        "total_defects": 7,
+        "dpu": 0.175
+      },
+      {
+        "jig_name": "ufb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 0,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "ufc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 0,
+          "spot_lepas": 2,
+          "spot_miss": 1,
+          "cripple": 2,
+          "makure": 1
+        },
+        "total_defects": 6,
+        "dpu": 0.15
+      },
+      {
+        "jig_name": "uxa",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 1,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 0
+        },
+        "total_defects": 2,
+        "dpu": 0.05
+      },
+      {
+        "jig_name": "uxb",
+        "production": 40,
+        "defects": {
+          "spot_ta": 2,
+          "spot_lepas": 1,
+          "spot_miss": 2,
+          "cripple": 2,
+          "makure": 2
+        },
+        "total_defects": 9,
+        "dpu": 0.225
+      },
+      {
+        "jig_name": "uxc",
+        "production": 40,
+        "defects": {
+          "spot_ta": 1,
+          "spot_lepas": 0,
+          "spot_miss": 0,
+          "cripple": 0,
+          "makure": 2
+        },
+        "total_defects": 3,
+        "dpu": 0.075
+      }
+    ],
+    "analysis": {
+      "highest_defect_jig": {
+        "name": "uxb",
+        "defect_count": 9,
+        "dpu": 0.225
+      },
+      "total_defects": 69,
+      "average_dpu": 0.115,
+      "target_dpu": 0.02,
+      "quality_status": "NG (Tidak Tercapai)"
+    }
+  }
+]

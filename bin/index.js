@@ -111,6 +111,13 @@ program
   .action(require("../commands/db-create"));
 
 program
+  .command("db-permit <name>")
+  .description("Cek atau atur izin publik read/write JSON DB (/NUDB/permissions/<name>.json)")
+  .option("--read <bool>", "Izin publik read (true/false)")
+  .option("--write <bool>", "Izin publik write (true/false)")
+  .action(require("../commands/db-permit"));
+
+program
   .command("run <functionName>")
   .description("Eksekusi function (lokal atau --remote di server NUDB)")
   .option("--data <json>", "Payload JSON untuk dikirim ke function")

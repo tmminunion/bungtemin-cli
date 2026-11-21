@@ -1,6 +1,6 @@
 {
   "name": "bungtemin-cli",
-  "version": "1.0.6",
+  "version": "1.0.12",
   "bin": {
     "bungtemin": "bin/index.js"
   },
@@ -12,10 +12,12 @@
     "@google/generative-ai": "^0.24.1",
     "axios": "^1.6.0",
     "blessed": "^0.1.81",
+    "cheerio": "^1.2.0",
     "commander": "^12.0.0",
     "esbuild": "^0.28.0",
     "express": "^5.2.1",
     "fs-extra": "^11.2.0",
-    "inquirer": "^9.2.0"
+    "inquirer": "^9.2.0",
+    "jsonwebtoken": "^9.0.3"
   }
 }

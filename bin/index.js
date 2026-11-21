@@ -1,60 +1,82 @@
 #!/usr/bin/env node
 
 const { program } = require("commander");
+const path = require("path");
 
-// 1. Konfigurasi Version dengan alias -v
-const path = require("path"); 
-
-// Pastikan jalurnya benar: naik satu folder dari 'bin' ke root
 const pkg = require(path.join(__dirname, "../package.json"));
 
 program
   .name("bungtemin")
   .version(pkg.version, "-v, --version", "Output the current version")
   .usage("<command> [options]")
-  .description("Bungtemin CLI - Serverless Function Management Tool");
-// 2. Menambahkan custom text pada help (Opsional)
-program.addHelpText('after', `
+  .description("Bungtemin CLI - Serverless Function Management Tool (NUDB & Flow Studio)");
+
+program.addHelpText(
+  "after",
+  `
 Contoh Penggunaan:
   $ bungtemin ui
-  $ bungtemin deploy myFunction.js
-  $ bungtemin run myFunction --data '{"key": "value"}'
-`);
+  $ bungtemin create myFunc --desc "Ambil data anggota"
+  $ bungtemin deploy myFunc
+  $ bungtemin deploy myFunc --minify
+  $ bungtemin pull
+  $ bungtemin diff
+  $ bungtemin packages
+  $ bungtemin run myFunc --data '{"key": "value"}'
+  $ bungtemin run myFunc --remote --data '{"key": "value"}'
+`
+);
 
 program
   .command("login")
-  .description("Login ke server")
+  .description("Login ke server NUDB")
   .action(require("../commands/login"));
 
 program
-  .command("deploy <file>")
-  .description("Deploy function ke server")
+  .command("deploy [file]")
+  .description("Build (esbuild bundle) & deploy function ke server NUDB")
+  .option("--no-bundle", "Deploy kode mentah tanpa esbuild bundle")
+  .option("--minify", "Perkecil ukuran hasil bundle", false)
   .action(require("../commands/deploy"));
 
 program
   .command("pull")
-  .description("Sync semua functions dari server ke lokal")
+  .description("Sync semua functions dari server ke lokal (aman, tidak hapus draft lokal)")
+  .option("--clean", "Ikut hapus file lokal yang tidak ada di server", false)
   .action(require("../commands/pull"));
-  
+
 program
   .command("list")
   .description("Tampilkan daftar function yang aktif di server")
   .action(require("../commands/list"));
-  
+
 program
   .command("diff")
-  .description("Bandingkan perbedaan kode lokal dengan server")
+  .description("Bandingkan perbedaan kode lokal dengan server / Flow Studio")
   .action(require("../commands/diff"));
 
 program
+  .command("packages")
+  .description("Tampilkan daftar package bawaan server NUDB (otomatis external saat build)")
+  .action(() => {
+    const { SERVER_NUDB_PACKAGES } = require("../utils/packages");
+    console.log(`\n📦 Package bawaan server NUDB (${SERVER_NUDB_PACKAGES.length}):\n`);
+    console.log("  " + SERVER_NUDB_PACKAGES.join(", "));
+    console.log(
+      "\n💡 Package lain yang di-install di lokal akan otomatis di-bundle oleh esbuild saat 'bungtemin deploy'.\n"
+    );
+  });
+
+program
   .command("delete <name>")
-  .description("Hapus function dari server")
+  .description("Hapus function dari server dan lokal")
   .action(require("../commands/delete"));
 
 program
   .command("create <name>")
-  .description("Buat template function baru")
-  .option("--auth", "Aktifkan autentikasi", false) // Menambahkan flag --auth
+  .description("Buat template function baru (Flow Studio & HTTP ready)")
+  .option("--auth", "Aktifkan autentikasi", false)
+  .option("-d, --desc <text>", "Deskripsi singkat function")
   .action(require("../commands/create"));
 
 program
@@ -66,43 +88,68 @@ program
   .command("db-pull <name>")
   .description("Download data database dari server")
   .action(require("../commands/db-pull"));
-  
+
 program
   .command("db-create <name> <json>")
   .description("Buat database baru dengan payload JSON")
   .action(require("../commands/db-create"));
-  
+
 program
   .command("run <functionName>")
-  .description("Eksekusi function secara remote")
+  .description("Eksekusi function (lokal atau --remote di server NUDB)")
   .option("--data <json>", "Payload JSON untuk dikirim ke function")
+  .option("-r, --remote", "Eksekusi langsung di server NUDB", false)
+  .option("-m, --method <method>", "HTTP method (POST atau GET)", "POST")
   .action(require("../commands/run"));
 
 program
   .command("serve")
-  .description("Jalankan server lokal untuk testing")
+  .description("Jalankan emulator server lokal untuk testing")
   .action(require("../commands/serve"));
 
 program
-  .command("ai [prompt]") // prompt jadi opsional jika pakai --edit
+  .command("ai [prompt]")
   .description("Generate atau Edit function menggunakan AI")
   .option("-n, --name <name>", "Nama file function")
   .option("-e, --edit <name>", "Nama file yang ingin diedit")
   .action(require("../commands/ai"));
 
 program
+  .command("quis [prompt]")
+  .description("Generate quis atau Edit function menggunakan AI")
+  .action(require("../commands/aiquis"));
+
+program
   .command("fix <name>")
   .description("Otomatis jalankan dan perbaiki error pada function menggunakan AI")
   .action(require("../commands/fix"));
-
 
 program
   .command("set-ai-key <key>")
   .description("Simpan Gemini API Key untuk fitur AI")
   .action((key) => {
     const { setConfig } = require("../utils/config");
-    setConfig({ ai_key: key }); // Sekarang fungsi ini sudah ada
+    setConfig({ ai_key: key });
     console.log("✅ API Key berhasil disimpan!");
+  });
+
+program
+  .command("set-ai-model <model>")
+  .description("Set model Gemini untuk fitur AI (default: gemini-2.5-flash)")
+  .action((model) => {
+    const { setConfig } = require("../utils/config");
+    setConfig({ ai_model: model });
+    console.log(`✅ Model AI diset ke: ${model}`);
+  });
+
+program
+  .command("set-nudb-path <dir>")
+  .description("Set folder lokal backup NUDB untuk resolusi modul saat run lokal")
+  .action((dir) => {
+    const { setConfig } = require("../utils/config");
+    const abs = path.resolve(dir);
+    setConfig({ nudb_path: abs });
+    console.log(`✅ Path NUDB lokal diset ke: ${abs}`);
   });
 
 program
@@ -110,15 +157,16 @@ program
   .description("Buka Terminal UI (Dashboard) untuk manajemen function")
   .action(require("../commands/ui"));
 
-// 3. Menangani perintah yang tidak dikenal
-program.on('command:*', function () {
-  console.error('Error: Perintah tidak valid: %s\nLihat --help untuk daftar perintah yang tersedia.', program.args.join(' '));
+program.on("command:*", function () {
+  console.error(
+    "Error: Perintah tidak valid: %s\nLihat --help untuk daftar perintah yang tersedia.",
+    program.args.join(" ")
+  );
   process.exit(1);
 });
 
 program.parse(process.argv);
 
-// Jika tidak ada argumen yang dimasukkan, tampilkan help secara otomatis
 if (!process.argv.slice(2).length) {
   program.outputHelp();
 }

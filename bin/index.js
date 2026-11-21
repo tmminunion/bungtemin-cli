@@ -195,6 +195,23 @@ program
     console.log(`✅ Path NUDB lokal diset ke: ${abs}`);
   });
 
+const flowCmd = program
+  .command("flow")
+  .description("Cek kesehatan & trigger workflow Bungtemin Flow Studio dari terminal");
+
+flowCmd
+  .command("health")
+  .description("Cek status NUDB Webhook Engine, WA OTP & Flow Studio")
+  .action(() => require("../commands/flow").flowHealth());
+
+flowCmd
+  .command("trigger <slug>")
+  .description("Trigger Incoming Webhook Flow Studio (POST/GET)")
+  .option("-d, --data <json>", "Payload JSON")
+  .option("-t, --token <token>", "Webhook Secret Token (X-Webhook-Token)")
+  .option("-m, --method <method>", "HTTP method (POST/GET)", "POST")
+  .action((slug, opts) => require("../commands/flow").flowTrigger(slug, opts));
+
 program
   .command("ui")
   .description("Buka Terminal UI (Dashboard) untuk manajemen function")

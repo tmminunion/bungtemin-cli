@@ -118,6 +118,26 @@ program
   .action(require("../commands/db-permit"));
 
 program
+  .command("apikey-list")
+  .description("Tampilkan daftar API Keys NUDB beserta scope read/write & DB")
+  .action(() => require("../commands/apikey").listKeys());
+
+program
+  .command("apikey-create")
+  .description("Buat API Key baru di NUDB (default aman: read=true, write=false)")
+  .option("--key <key>", "API Key custom (kosong = auto-generate 32 karakter)")
+  .option("-d, --desc <text>", "Deskripsi API Key")
+  .option("--read <bool>", "Izin read (true/false)", "true")
+  .option("--write <bool>", "Izin write (true/false)", "false")
+  .option("--db <list>", "Batasi DB pisah koma (mis. Absensi,NewMenu; kosong = semua)")
+  .action((opts) => require("../commands/apikey").createKey(opts));
+
+program
+  .command("apikey-delete <key>")
+  .description("Hapus API Key dari NUDB")
+  .action((key) => require("../commands/apikey").deleteKey(key));
+
+program
   .command("run <functionName>")
   .description("Eksekusi function (lokal atau --remote di server NUDB)")
   .option("--data <json>", "Payload JSON untuk dikirim ke function")

@@ -22,6 +22,7 @@ Contoh Penggunaan:
   $ bungtemin pull
   $ bungtemin diff
   $ bungtemin packages
+  $ bungtemin db-list
   $ bungtemin run myFunc --data '{"key": "value"}'
   $ bungtemin run myFunc --remote --data '{"key": "value"}'
 `
@@ -80,18 +81,23 @@ program
   .action(require("../commands/create"));
 
 program
+  .command("db-list")
+  .description("Tampilkan daftar JSON DB di server NUDB")
+  .action(require("../commands/db-list"));
+
+program
   .command("db-push <file>")
-  .description("Upload skema/data database ke server")
+  .description("Upload data JSON DB ke server (smart path: cukup nama DB atau path file)")
   .action(require("../commands/db-push"));
 
 program
   .command("db-pull <name>")
-  .description("Download data database dari server")
+  .description("Download data JSON DB dari server ke folder data/")
   .action(require("../commands/db-pull"));
 
 program
-  .command("db-create <name> <json>")
-  .description("Buat database baru dengan payload JSON")
+  .command("db-create <name> [json]")
+  .description("Buat JSON DB baru di server & lokal (default payload: {})")
   .action(require("../commands/db-create"));
 
 program

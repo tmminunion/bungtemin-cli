@@ -18,11 +18,12 @@ Contoh Penggunaan:
   $ bungtemin ui
   $ bungtemin create myFunc --desc "Ambil data anggota"
   $ bungtemin deploy myFunc
-  $ bungtemin deploy myFunc --minify
   $ bungtemin pull
   $ bungtemin diff
   $ bungtemin packages
   $ bungtemin db-list
+  $ bungtemin db-pull --all
+  $ bungtemin db-read Absensi --limit 5
   $ bungtemin run myFunc --data '{"key": "value"}'
   $ bungtemin run myFunc --remote --data '{"key": "value"}'
 `
@@ -86,13 +87,22 @@ program
   .action(require("../commands/db-list"));
 
 program
+  .command("db-read <name>")
+  .description("Baca isi JSON DB langsung di terminal (server atau --local)")
+  .option("-l, --local", "Baca dari file lokal data/<name>.json", false)
+  .option("--limit <n>", "Batasi jumlah item/key yang ditampilkan")
+  .option("-k, --key <field>", "Tampilkan hanya field/key tertentu (contoh: config.version)")
+  .action(require("../commands/db-read"));
+
+program
   .command("db-push <file>")
   .description("Upload data JSON DB ke server (smart path: cukup nama DB atau path file)")
   .action(require("../commands/db-push"));
 
 program
-  .command("db-pull <name>")
-  .description("Download data JSON DB dari server ke folder data/")
+  .command("db-pull [name]")
+  .description("Download 1 JSON DB atau semua DB (--all / tanpa nama) ke folder data/")
+  .option("-a, --all", "Pull semua JSON DB dari server", false)
   .action(require("../commands/db-pull"));
 
 program
